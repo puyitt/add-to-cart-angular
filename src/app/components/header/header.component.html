@@ -1,0 +1,17 @@
+<header>
+    <div class="navbar bg-primary shoadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+            <i class="fa fa-shipping-fast" style="font-size:30px;color:#fff;">&nbsp;
+            </i>
+            <strong style="font-size:20px;color:#fff;">Flipkart</strong>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search products" [(ngModel)]="searchTerm" (keyup)="search($event)">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <button routerLink="cart" class="btn btn-primary mx-2">
+            <i style="font-size: 20px;" class="fa fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+</header>
